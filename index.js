@@ -1,22 +1,8 @@
-const _ = require('lodash');
+// const add = require('./math');
 
-const numbers = [1, 2, 3, 4, 5, 6];
-
-const chunked = _.chunk(numbers, 2);
-console.log(chunked);
-
-const obj = { 'a': 1, 'b': 2, 'c': 3, 'd': 4 };
-const clonedObj = _.cloneDeep(obj);
-console.log(clonedObj);
+// console.log(add(2, 5));
 
 
-// global variables
-console.log(__dirname);
-console.log(__filename);
+import { add } from './math.js';
 
-// process object
-console.log(process.cwd());
-console.log(process.pid);
-console.log(process.platform);
-console.log(process.version);
-console.log(process.exit());
+console.log(add(3, 7));
